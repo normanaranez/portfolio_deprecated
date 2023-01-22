@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const { pathname } = useRouter();
+  const pathname = process.env.githubPagePath ? process.env.githubPagePat : '/';
 
-  console.log('pathName', pathname);
+  console.log('path', process.env.githubPagePath);
 
   return (
     <>
