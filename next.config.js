@@ -4,7 +4,15 @@ const nextConfig = {
   images: {
     domains: ['normanaranez.github.io']
   },
-  basePath: "/Portfolio/"
+  env: {
+    PUBLIC_URL: '/Portfolio/',
+  },
+  publicRuntimeConfig: {
+    basePath: '/'
+  },
+  serverRuntimeConfig: {
+    basePath: '/'
+  }
 }
 
 module.exports = nextConfig
