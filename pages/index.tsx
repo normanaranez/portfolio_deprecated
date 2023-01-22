@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import getConfig from 'next/config'
+
+const { basePath } = getConfig().publicRuntimeConfig;
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +31,7 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src="/vercel.svg"
+                src={`${basePath}/vercel.svg`}
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
