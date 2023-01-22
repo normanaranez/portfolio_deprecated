@@ -2,9 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['normanaranez.github.io']
-  },
-  basePath: "/Portfolio"
+    domains: ['normanaranez.github.io'],
+    path: 'Portfolio'
+  },  
 }
 
 module.exports = nextConfig
