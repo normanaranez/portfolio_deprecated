@@ -9,6 +9,9 @@ const { basePath } = getConfig().publicRuntimeConfig;
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  console.log('basePath', basePath);
+  
   return (
     <>
       <Head>
