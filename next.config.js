@@ -3,9 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['vercel.com']
-  },
-  env: {
-    githubPagePath: 'Portfolio/'
   }
 }
 
